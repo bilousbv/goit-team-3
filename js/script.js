@@ -5,10 +5,10 @@
     menu: document.querySelector('[data-menu]'),
   }
 
-  menuRefs.openMenuBtn.addEventListener('click', toggleMenu)
-  menuRefs.closeMenuBtn.addEventListener('click', toggleMenu)
+  menuRefs.openMenuBtn?.addEventListener('click', toggleMenu);
+  menuRefs.closeMenuBtn?.addEventListener('click', toggleMenu);
 
   function toggleMenu() {
-    menuRefs.menu.classList.toggle('is-open')
+    menuRefs.menu?.classList.toggle('is-open');
   }
 })()
