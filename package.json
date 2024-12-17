@@ -1,0 +1,12 @@
+{
+  "name": "english_excellence",
+  "version": "1.0.0",
+  "description": "English Excellence",
+  "scripts": {
+    "prettier": "npx prettier . --write"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.4.2"
+  }
+}
