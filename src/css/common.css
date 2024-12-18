@@ -63,8 +63,17 @@ h2 {
   letter-spacing: -0.02em;
 }
 
+p {
+  font-size: 1.125rem;
+}
+
+section {
+  padding: 4.5rem 0;
+}
+
 .container {
   max-width: 1152px;
+  padding: 0 2rem;
   margin: auto;
 }
 
@@ -156,4 +165,29 @@ h2 {
 .social-list__item__button:focus,
 .social-list__item__button:hover {
   color: var(--color-green);
+}
+
+/* Tablet */
+@media (max-width: 1280px) {
+
+}
+
+/* Mob */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+}
+
+/* Small Mob */
+@media (max-width: 375px) {
+
 }
