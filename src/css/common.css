@@ -59,13 +59,14 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
 
 p {
-  font-size: 1.125rem;
+  font-size: 0.875rem;
 }
 
 section {
@@ -75,7 +76,7 @@ section {
 
 .container {
   max-width: 1152px;
-  padding: 0 2rem;
+  padding: 0 1.25rem;
   margin: auto;
 }
 
@@ -194,27 +195,17 @@ section {
   color: var(--color-green);
 }
 
-/* Tablet */
-@media (max-width: 1280px) {
 
-}
-
-/* Mob */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .container {
-    padding: 0 1.25rem;
+    padding: 0 2rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   p {
-    font-size: 0.875rem;
+    font-size: 1.125rem;
   }
-}
-
-/* Small Mob */
-@media (max-width: 375px) {
-
 }
