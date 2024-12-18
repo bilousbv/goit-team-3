@@ -250,6 +250,11 @@ section {
   justify-content: center;
 }
 
+.about .big-card img {
+  width: 250px;
+  height: auto;
+}
+
 .about .card {
   width: 100%;
   background: var(--color-gray);
