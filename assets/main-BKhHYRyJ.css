@@ -294,8 +294,147 @@ section {
   }
 }
 
-.lessons {
+.lessons .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.lessons .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .lessons .top {
+    margin-bottom: 64px;
+  }
+}
+
+.lessons .header {
+  color: var(--color-black);
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 768px) {
+  .lessons .header {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.lessons .description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  max-width: 665px;
+}
+
+@media (min-width: 768px) {
+  .lessons .description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.lessons .lessons-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .lessons .lessons-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: unset;
+  }
+}
+
+.lessons .lessons-item {
+  max-width: 335px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  border: 1px solid var(--color-green);
+  border-radius: 16px;
+}
+
+@media (min-width: 768px) {
+  .lessons .lessons-item {
+    max-width: 336px;
+    height: 404px;
+    padding: 32px 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .lessons .lessons-item {
+    max-width: 320px;
+    padding: 32px 32px;
+  }
+}
+
+.lessons .lessons-item.recommended {
+  background-color: var(--color-green);
+}
+
+.lessons .lessons-item .name {
+  color: var(--color-black);
+  margin-bottom: 14px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+.lessons .lessons-item .price {
+  color: var(--color-black);
+  margin-bottom: 40px;
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+}
+
+.lessons .lessons-item .description {
+  flex-grow: 2;
+}
+
+@media (min-width: 768px) {
+  .lessons .lessons-item .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.lessons .lessons-item.recommended {
+  color: var(--color-white);
+}
+
+.lessons .lessons-item.recommended .name {
+  color: var(--color-white);
+}
+
+.lessons .lessons-item.recommended .price {
+  color: var(--color-white);
+}
+
+.lessons .lessons-item.recommended .btn.btn-primary {
+  border-color: var(--color-white);
 }
 
 .package {
