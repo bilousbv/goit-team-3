@@ -1,13 +1,11 @@
 # GoIT Group Project - Team 3
 
-## Prettier
+## Запуск
 
-В проєкті налаштовано prettier.
-Для його використання запустіть команду:
-
-`npm run prettier`
-
-Або підключіть цей конфіг до вашої IDE для автоматичного застосування.
+1. Встановіть залежності:
+   ```bash
+   npm i
+   npm run start
 
 ## Typography
 
