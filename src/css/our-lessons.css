@@ -18,7 +18,7 @@
   }
 }
 
-.lessons .header {
+.lessons .title {
   color: var(--color-black);
 
   font-size: 32px;
@@ -28,7 +28,7 @@
 }
 
 @media (min-width: 768px) {
-  .lessons .header {
+  .lessons .title {
     font-size: 40px;
     line-height: 48px;
   }
