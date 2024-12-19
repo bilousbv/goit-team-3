@@ -1,3 +1,109 @@
 .footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
 
+.footer .container {
+    padding-top: 2.5rem;
+    padding-left: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.footer .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.footer .logo {
+    color: inherit;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.7rem;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 1.25rem;
+}
+
+.footer .phone {
+    margin-bottom: 1rem;
+}
+
+.footer .contact-info-label {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 0.25rem;
+}
+
+.footer .icon {
+    color: var(--color-white);
+    border: 1px solid var(--color-border-contrast);
+    border-radius: 0.625rem;
+    padding: 0.5rem;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .icon:hover,
+.footer .icon:active {
+    color: var(--color-pressed-state);
+}
+
+.footer .navigation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.footer .navigation-list .navigation-link {
+    color: var(--color-white);
+    font-family: Manrope, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.125rem;
+    text-align: left;
+}
+
+.footer-line {
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+}
+
+.footer .privacy-container {
+    font-family: var(--font-family-primary);
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+}
+
+.footer .terms-and-policy {
+    display: flex;
+    flex-direction: row;
+    gap: 1.125rem;
+}
+
+@media (min-width: 768px) {
+    .footer .content-container {
+        flex-direction: row;
+    }
+
+    .footer .privacy-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
