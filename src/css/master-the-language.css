@@ -1,3 +1,544 @@
-.package {
-  
+:root {
+    --color-black: #121417;
+    --color-green: #4dc274;
+    --color-pressed-state: #38ae5f;
+    --color-light-green: #d4fde1;
+    --color-title-green: #bee8cc;
+    --color-white: #ffffff;
+    font-size: 16px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 0.0625rem;
+    height: 0.0625rem;
+    margin: -0.0625rem;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.text__element {
+    position: relative;
+}
+
+.master__container {
+    border-radius: 1rem;
+    background-image: linear-gradient(85deg,
+            var(--color-green) 2.25%,
+            var(--color-title-green) 131.25%);
+}
+
+.master__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .master__pic {
+        display: none;
+    }
+
+    .master__container {
+        padding-top: 2.5rem;
+    }
+
+    .master__wrapper {
+        max-width: 18.5rem;
+    }
+
+    .master__heading {
+        font-weight: 700;
+        font-size: 2.375rem;
+        line-height: 1.05;
+        padding-left: 1.25rem;
+        color: var(--color-white);
+    }
+
+    .master__heading-current {
+        font-weight: 700;
+        font-size: 2.375rem;
+        line-height: 1.05;
+        color: var(--color-title-green);
+    }
+
+    .master {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .master__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 1.1rem;
+        height: 1.1rem;
+        background-color: var(--color-green);
+    }
+
+    .master__icon {
+        width: 1.1rem;
+        height: 0.875rem;
+        color: var(--color-white);
+    }
+
+    .master__tittle {
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        color: var(--color-black);
+    }
+
+    .master__item-text {
+        font-weight: 700;
+        font-size: 0.75rem;
+        line-height: 1.4;
+        letter-spacing: -0.02em;
+        color: var(--color-black);
+    }
+
+    .master__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .master__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .master__tittle {
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        margin-bottom: 1.25rem;
+    }
+
+    .master__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 1.7;
+        border-radius: 0.75rem;
+        padding: 0.875rem 0;
+        color: var(--color-white);
+        background-color: var(--color-green);
+        transition: background-color 750ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .master__button:hover,
+    .master__button:focus {
+        background-color: var(--color-pressed-state);
+    }
+
+    .master__box {
+        background: url(../../public/images/master/master_cards_ph@1x.png) no-repeat center/contain;
+        height: 34.6875rem;
+        padding: 0 2.25rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) and (min-resolution: 192dpi),
+(min-width: 320px) and (max-width: 374px) and (min-resolution: 2dppx),
+(min-width: 320px) and (max-width: 374px) and (min-device-pixel-ratio: 2) {
+    .master__box {
+        background: url(../../public/images/master/master_cards_ph@2x.png) no-repeat center/contain;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .master {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .master__wrapper {
+        max-width: unset;
+    }
+
+    .master__container {
+        margin: 0 auto;
+        padding-top: 2.5rem;
+        padding-bottom: 1.25rem;
+        max-width: 20.9375rem;
+        height: 46.0625rem;
+    }
+
+    .master__pic {
+        display: none;
+    }
+
+    .master__heading {
+        font-weight: 700;
+        font-size: 2.375rem;
+        line-height: 1.05;
+        margin-bottom: 1.25rem;
+        padding-left: 1.25rem;
+        color: var(--color-white);
+    }
+
+    .master__heading-current {
+        font-weight: 700;
+        font-size: 2.375rem;
+        line-height: 1.05;
+        color: var(--color-title-green);
+    }
+
+    .master__box {
+        background: url(../../public/images/master/master_cards_ph@1x.png) no-repeat center/contain;
+        display: flex;
+        justify-content: center;
+        height: 28.5rem;
+    }
+
+    .master__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.25rem;
+        height: 1.25rem;
+        border-radius: 50%;
+        background-color: var(--color-green);
+    }
+
+    .master__icon {
+        width: 1.125rem;
+        height: 1rem;
+        color: var(--color-white);
+    }
+
+    .master__tittle {
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        color: var(--color-black);
+    }
+
+    .master__item-text {
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 1.4;
+        letter-spacing: -0.02em;
+        width: 14.1875rem;
+        color: var(--color-black);
+    }
+
+    .master__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .master__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .master__tittle {
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        margin-bottom: 1.25rem;
+    }
+
+    .master__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 1.7;
+        padding: 0.875rem 0;
+        border-radius: 0.75rem;
+        color: var(--color-white);
+        background-color: var(--color-green);
+        transition: background-color 750ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .master__button:hover,
+    .master__button:focus {
+        background-color: var(--color-pressed-state);
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) and (min-resolution: 192dpi),
+(min-width: 375px) and (max-width: 767px) and (min-resolution: 2dppx),
+(min-width: 375px) and (max-width: 767px) and (min-device-pixel-ratio: 2) {
+    .master__box {
+        background: url(../../public/images/master/master_cards_ph@2x.png) no-repeat center/contain;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .master__container {
+        margin: 0 auto;
+        padding-top: 4rem;
+        padding-bottom: 1.875rem;
+        border-radius: 1.875rem;
+        max-width: 44rem;
+    }
+
+    .master__wrapper {
+        max-width: 28rem;
+    }
+
+    .master__heading {
+        font-weight: 700;
+        font-size: 3.75rem;
+        line-height: 1.2;
+        margin-bottom: 2.0625rem;
+        padding-left: 2rem;
+        color: var(--color-white);
+    }
+
+    .master__heading-current {
+        font-weight: 700;
+        font-size: 3.75rem;
+        line-height: 1.2;
+        color: var(--color-title-green);
+    }
+
+    .master__box {
+        background: url(../../public/images/master/master_cards_tab@1x.png) no-repeat center/auto;
+        background-position: calc(50% + 0.3125rem) center;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        min-height: 37.9375rem;
+        padding-left: 3.125rem;
+        position: relative;
+    }
+
+    .master__list {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .master__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .master__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        min-width: 1.75rem;
+        height: 1.75rem;
+        background-color: var(--color-green);
+    }
+
+    .master__icon {
+        color: var(--color-white);
+        width: 1.5rem;
+        height: 1.375rem;
+    }
+
+    .master__tittle {
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        margin-bottom: 2rem;
+        color: var(--color-black);
+    }
+
+    .master__item-text {
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        color: var(--color-black);
+    }
+
+    .master__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 1.5;
+        border-radius: 0.75rem;
+        padding: 1rem 0;
+        max-width: 19.125rem;
+        height: 3.75rem;
+        color: var(--color-white);
+        background-color: var(--color-green);
+        transition: background-color 750ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .master__button:hover,
+    .master__button:focus {
+        background-color: var(--color-pressed-state);
+    }
+
+    .master__pic {
+        position: absolute;
+        bottom: 7.875rem;
+        right: -1.9375rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi),
+(min-width: 768px) and (min-resolution: 2dppx),
+(min-width: 768px) and (min-device-pixel-ratio: 2) {
+    .master__box {
+        background: url(../../public/images/master/master_cards_tab@2x.png) no-repeat center/cover;
+        background-position: calc(50% + 0.3125rem) center;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .master__container {
+        margin: 0 auto;
+        padding-top: 4rem;
+        padding-bottom: 4.3125rem;
+        max-width: 72rem;
+        max-height: 59.375rem;
+    }
+
+    .master__wrapper {
+        max-width: 41.0625rem;
+        margin-right: 5.75rem;
+    }
+
+    .master__heading {
+        font-weight: 700;
+        font-size: 3.75rem;
+        line-height: 1.2;
+        margin-bottom: 4.5rem;
+        padding-left: 4rem;
+        width: 51.875rem;
+        color: var(--color-white);
+    }
+
+    .master__heading-current {
+        font-weight: 700;
+        font-size: 3.75rem;
+        line-height: 1.2;
+        color: var(--color-title-green);
+    }
+
+    .master__box {
+        background: url(../../public/images/master/master_cards_dsk@1x.png) no-repeat center/cover;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding-left: 6.5625rem;
+        min-height: 37.75rem;
+        max-width: 69rem;
+        position: relative;
+    }
+
+    .master__list {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2.4375rem;
+    }
+
+    .master__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+    }
+
+    .master__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 1.75rem;
+        height: 1.75rem;
+        background-color: var(--color-green);
+    }
+
+    .master__icon {
+        color: var(--color-white);
+        width: 1.5rem;
+        height: 1.375rem;
+    }
+
+    .master__tittle {
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        margin-bottom: 2.625rem;
+        color: var(--color-black);
+    }
+
+    .master__item-text {
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        color: var(--color-black);
+    }
+
+    .master__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 1.5;
+        border-radius: 0.75rem;
+        padding: 1rem 0;
+        max-width: 19.125rem;
+        color: var(--color-white);
+        background-color: var(--color-green);
+        transition: background-color 750ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .master__pic {
+        position: absolute;
+        bottom: 9.4375rem;
+        right: 2.6875rem;
+    }
+
+    .master__button:hover,
+    .master__button:focus {
+        background-color: var(--color-pressed-state);
+    }
+}
+
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi),
+(min-width: 1280px) and (min-resolution: 2dppx),
+(min-width: 1280px) and (min-device-pixel-ratio: 2) {
+    .master__box {
+        background: url(../../public/images/master/master_cards_dsk@2x.png) no-repeat center/cover;
+        left: -0.625rem;
+    }
 }
