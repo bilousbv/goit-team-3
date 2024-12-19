@@ -49,7 +49,7 @@
 @media (min-width: 48rem) { /* 768px */
 
     .teachers-section {
-        padding: 2rem 1.5rem; /* 32px 24px */ч
+        padding: 2rem 1.5rem; /* 32px 24px */
         max-width: 64rem; /* 1024px */
     }
 
@@ -73,6 +73,8 @@
 
     .section-description {
         margin-bottom: 2.5rem;
+        max-width: 44.3125rem; /* 709px */
+        font-size: 1.125rem; /* 18px */
     }
 
     .teacher-name {
@@ -82,6 +84,54 @@
     .teacher-description {
         font-size: 1rem;
         max-width: 18.75rem; /* 300px */
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 80rem) { /* 1280px */
+
+    .teachers-section {
+        padding: 3rem 2rem;
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        font-size: 2.5rem; /* 40px */
+        margin-bottom: 1rem;
+    }
+
+    .section-description {
+        font-size: 1.125rem; /* 18px */
+        max-width: 50rem; /* 800px */
+        margin-bottom: 3rem;
+    }
+
+    .teachers-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+    }
+
+    .teacher {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .teacher-image {
+        width: 10rem; /* 160px */
+        height: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    .teacher-name {
+        font-size: 1.5rem; /* 24px */
+        margin-bottom: 0.5rem;
+    }
+
+    .teacher-description {
+        font-size: 1rem;
+        max-width: 18rem; /* 288px */
         margin: 0 auto;
     }
 }
