@@ -72,6 +72,10 @@
     padding: 32px 16px;
     border-radius: 30px;
   }
+
+  .students-item:nth-child(2) {
+    display: block;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -80,11 +84,11 @@
     padding: 32px 16px;
     border-radius: 30px;
   }
-}
 
-/* .students-item:not(:first-child) {
-  display: none;
-} */
+  .students-item:nth-child(3) {
+    display: block;
+  }
+}
 
 .students-card {
   display: flex;
@@ -143,4 +147,8 @@
   padding: 0 16px;
   line-height: 1.5;
   color: var(--color-text);
+}
+
+.hidden {
+  display: none;
 }
