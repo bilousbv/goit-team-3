@@ -353,7 +353,114 @@ section {
 }
 
 .hero {
+	padding: 0.5rem;
+	height: calc(100lvh - 4.5rem);
+	display: flex;
+	flex-direction: column;
+}
 
+.hero .container {
+	border-radius: 1.875rem;
+	background-image: url("/goit-team-3/images/hero/hero_sm.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 3rem;
+	padding: 2.5rem 1.5rem 4.5rem;
+	position: relative;
+}
+
+.hero .title {
+	font-size: 2.375rem;
+	font-weight: 700;
+	line-height: 1.05;
+	color: var(--color-white);
+	width: min(100%, 30.5rem);
+}
+
+.hero .title .accent {
+	color: var(--color-light-green);
+}
+
+.hero .btn {
+	display: flex;
+	justify-content: center;
+	width: min(100%, 19.125rem);
+}
+
+.hero .scroll-button {
+	border-radius: 50%;
+	background-color: var(--color-white);
+	padding: 0.5rem;
+	position: absolute;
+	bottom: 0.875rem;
+	right: 0.875rem;
+	color: var(--color-green);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero .scroll-button:focus,
+.hero .scroll-button:hover {
+	background-color: var(--color-green);
+	color: var(--color-white);
+}
+
+@media (min-resolution: 192dpi) {
+	.hero .container {
+		background-image: url("/goit-team-3/images/hero/hero_sm@2x.jpg");
+	}
+}
+
+@media (min-width: 768px) {
+	.hero {
+		padding: 2rem;
+	}
+
+	.hero .container {
+		background-image: url("/goit-team-3/images/hero/hero_md.jpg");
+		justify-content: center;
+		padding-inline: 2rem;
+	}
+
+	.hero .title {
+		font-size: 3.75rem;
+		line-height: 1.17;
+	}
+}
+
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+	.hero .container {
+		background-image: url("/goit-team-3/images/hero/hero_md@2x.jpg");
+	}
+}
+
+@media (min-width: 1280px) {
+	.hero {
+		padding: 1rem 0 1.5rem;
+		height: fit-content;
+	}
+
+	.hero .container {
+		background-image: url("/goit-team-3/images/hero/hero_lg.jpg");
+		aspect-ratio: 16 / 9;
+		padding-inline: 4rem;
+	}
+
+	.hero .title {
+		width: 100%;
+		max-width: 35.25rem;
+	}
+}
+
+@media (min-width: 1280px) and (min-resolution: 192dpi) {
+	.hero .container {
+		background-image: url("/goit-team-3/images/hero/hero_lg@2x.jpg");
+	}
 }
 
 .about .container {
@@ -602,8 +709,142 @@ section {
   
 }
 
-.teachers {
-  
+.teachers-section {
+    padding: 1.25rem 0.9375rem; /* 20px 15px */
+    max-width: 23.4375rem; /* 375px */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.25rem; /* 36px */
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+.section-description {
+    font-size: 1rem;
+    line-height: 1.625; /* 26px */
+    margin: 0 auto 1.5rem;
+    max-width: 21rem;
+    font-weight: 400;
+}
+
+.teacher {
+    margin-bottom: 2rem;
+}
+
+.teacher-image {
+    width: 7.5rem; /* 120px */
+    height: 7.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.teacher-name {
+    font-size: 1.125rem; /* 18px */
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: var(--color-black);
+}
+
+.teacher-description {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 21rem;
+}
+
+@media (min-width: 48rem) { /* 768px */
+
+    .teachers-section {
+        padding: 2rem 1.5rem; /* 32px 24px */
+        max-width: 64rem; /* 1024px */
+    }
+
+    .teachers-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin: 0 auto;
+    }
+
+    .teacher {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .teacher-image {
+        width: 9.375rem; /* 150px */
+        height: 9.375rem;
+        margin-bottom: 0.75rem; /* 12px */
+    }
+
+    .section-description {
+        margin-bottom: 2.5rem;
+        max-width: 44.3125rem; /* 709px */
+        font-size: 1.125rem; /* 18px */
+    }
+
+    .teacher-name {
+        font-size: 1.25rem; /* 20px */
+    }
+
+    .teacher-description {
+        font-size: 1rem;
+        max-width: 18.75rem; /* 300px */
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 80rem) { /* 1280px */
+
+    .teachers-section {
+        padding: 3rem 2rem;
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        font-size: 2.5rem; /* 40px */
+        margin-bottom: 1rem;
+    }
+
+    .section-description {
+        font-size: 1.125rem; /* 18px */
+        max-width: 50rem; /* 800px */
+        margin-bottom: 3rem;
+    }
+
+    .teachers-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+    }
+
+    .teacher {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .teacher-image {
+        width: 10rem; /* 160px */
+        height: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    .teacher-name {
+        font-size: 1.5rem; /* 24px */
+        margin-bottom: 0.5rem;
+    }
+
+    .teacher-description {
+        font-size: 1rem;
+        max-width: 18rem; /* 288px */
+        margin: 0 auto;
+    }
 }
 
 .leave {

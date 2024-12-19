@@ -17,8 +17,8 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
 		<link rel="manifest" href="manifest.json" />
-		<script type="module" crossorigin src="/goit-team-3/assets/main-DQSeEjfR.js"></script>
-		<link rel="stylesheet" crossorigin href="/goit-team-3/assets/main-j4QfYFf2.css">
+		<script type="module" crossorigin src="/goit-team-3/assets/main-Kh6EakjQ.js"></script>
+		<link rel="stylesheet" crossorigin href="/goit-team-3/assets/main-CwMZDGNL.css">
 	</head>
 	<body>
 		<header class="header" data-header>
@@ -40,16 +40,16 @@
 								<a href="#about" class="navigation-link">About us</a>
 							</li>
 							<li>
-								<a href="#" class="navigation-link">Our lessons</a>
+								<a href="#our-lessons" class="navigation-link">Our lessons</a>
 							</li>
 							<li>
-								<a href="#" class="navigation-link">Teachers</a>
+								<a href="#teachers" class="navigation-link">Teachers</a>
 							</li>
 							<li>
-								<a href="#" class="navigation-link">Reviews</a>
+								<a href="#students" class="navigation-link">Reviews</a>
 							</li>
 							<li>
-								<a href="#" class="navigation-link">Contact us</a>
+								<a href="#leave-an-app" class="navigation-link">Contact us</a>
 							</li>
 						</ul>
 					</nav>
@@ -110,7 +110,15 @@
 			<div class="menu-overlay" data-menu-overlay></div>
 		</header>		
 		<section class="hero">
-			<div class="container">Hero</div>
+			<div class="container">
+				<h1 class="title">Discover the joy of learning <span class="accent">English</span> with us!</h1>
+				<a href="#leave-an-app" class="btn btn-primary">Leave an application</a>
+				<a href="#about" class="icon-button scroll-button">
+					<svg width="1.5rem" height="1.5rem">
+						<use href="./images/icons.svg#icon-chevron-down"></use>
+					</svg>
+				</a>
+			</div>
 		</section>
 
 		<section class="about" id="about">
@@ -152,7 +160,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="lessons">
+		<section class="lessons" id="our-lessons">
 		  <div class="container">
 		    <div class="top">
 		      <h2 class="title">Our <span class="title-accent">Lessons</span></h2>
@@ -207,10 +215,57 @@
 			<div class="container">Master the Language</div>
 		</section>
 		
-		<section class="teachers">
-			<div class="container">Meet our teachers</div>
-		</section>
+		<section class="teachers-section">
+			<h1 class="section-title">Meet our <span class="title-accent">teachers</span></h1>
+			<p class="section-description">
+				Discover our team of dedicated educators, committed to guiding you on your journey to English proficiency with
+				personalized and engaging instruction.
+			</p>
+			<ul class="teachers-list">
+				<li class="teacher">
+					<img src="images/teachers/maria.jpg" srcset="images/teachers/maria.jpg 1x, images/teachers/maria@2x.jpg 2x"
+						alt="Maria" class="teacher-image">
+					<h3 class="teacher-name">Maria</h3>
+					<p class="teacher-description">
+						A seasoned linguist and our primary specialist in beginner-level instruction, Maria brings warmth and
+						patience to every class.
+					</p>
+				</li>
 		
+				<li class="teacher">
+					<img src="images/teachers/artem.jpg" srcset="images/teachers/artem.jpg 1x, images/teachers/artem@2x.jpg 2x"
+						alt="Artem" class="teacher-image">
+					<h3 class="teacher-name">Artem</h3>
+					<p class="teacher-description">
+						With his innovative teaching techniques and a focus on interactive learning, Artem excels in keeping
+						students engaged and motivated.
+					</p>
+				</li>
+		
+				<li class="teacher">
+					<img src="images/teachers/ilona.jpg" srcset="images/teachers/ilona.jpg 1x, images/teachers/ilona@2x.jpg 2x"
+						alt="Ilona" class="teacher-image">
+					<h3 class="teacher-name">Ilona</h3>
+					<p class="teacher-description">
+						A specialist in advanced English, Ilona provides intensive instruction, ensuring students gain
+						confidence in
+						complex language tasks.
+					</p>
+				</li>
+		
+				<li class="teacher">
+					<img src="images/teachers/volodymyr.jpg"
+						srcset="images/teachers/volodymyr.jpg 1x, images/teachers/volodymyr@2x.jpg 2x" alt="Volodymyr"
+						class="teacher-image">
+					<h3 class="teacher-name">Volodymyr</h3>
+					<p class="teacher-description">
+						Our expert in English for specific purposes, Volodymyr tailors his approach to meet individual career
+						and
+						industry-specific language needs.
+					</p>
+				</li>
+			</ul>
+		</section>		
 		<section class="leave">
 			<div class="container">Leave an application</div>
 		</section>

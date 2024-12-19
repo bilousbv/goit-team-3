@@ -63,7 +63,6 @@
   function setActiveMenu() {
     const currentHash = window.location.hash;
     menuItems.forEach((item) => {
-      console.log(item, currentHash);
       if (item.getAttribute("href") === currentHash) {
         item.classList.add("active");
       } else {
