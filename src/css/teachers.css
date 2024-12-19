@@ -45,3 +45,43 @@
     margin: 0 auto;
     max-width: 21rem;
 }
+
+@media (min-width: 48rem) { /* 768px */
+
+    .teachers-section {
+        padding: 2rem 1.5rem; /* 32px 24px */ч
+        max-width: 64rem; /* 1024px */
+    }
+
+    .teachers-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin: 0 auto;
+    }
+
+    .teacher {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .teacher-image {
+        width: 9.375rem; /* 150px */
+        height: 9.375rem;
+        margin-bottom: 0.75rem; /* 12px */
+    }
+
+    .section-description {
+        margin-bottom: 2.5rem;
+    }
+
+    .teacher-name {
+        font-size: 1.25rem; /* 20px */
+    }
+
+    .teacher-description {
+        font-size: 1rem;
+        max-width: 18.75rem; /* 300px */
+        margin: 0 auto;
+    }
+}
