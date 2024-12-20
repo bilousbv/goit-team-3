@@ -51,7 +51,7 @@
   height: auto;
 }
 
-.about .card {
+.about .about-card {
   width: 100%;
   background: var(--color-gray);
   padding: 2rem;
@@ -61,12 +61,12 @@
   gap: 1rem;
 }
 
-.about .card .counter {
+.about .about-card .counter {
   font-size: 1.75rem;
   color: var(--color-green);
 }
 
-.about .card .text {
+.about .about-card .text {
   font-size: 1.25rem;
   color: var(--color-black);
   font-weight: bold;
@@ -86,7 +86,7 @@
     gap: 2rem;
   }
 
-  .about .card {
+  .about .about-card {
     width: calc(50% - 16px);
   }
 }
