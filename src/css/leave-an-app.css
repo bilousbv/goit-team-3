@@ -75,17 +75,17 @@ text-align: left;
 }
 
 
-.privacy-policy {
+.leave .privacy-policy {
 font-size: 12px;
 font-weight: 400;
 line-height: 1.3;
 text-align: left;
 color: rgba(18, 20, 23, 0.5);
-padding: 20px;
+padding: 0 20px;
 }
 
 @media (min-width: 768px) {
-.privacy-policy {
+.leave .privacy-policy {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
@@ -95,12 +95,12 @@ padding: 20px;
 }
 
 
-.privacy-link {
+.leave .privacy-link {
 text-decoration: underline;
 color: currentColor;
 }
 
-.application-form {
+.leave .application-form {
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -108,7 +108,7 @@ gap: 18px;
 }
 
 
-.form-input {
+.leave .form-input {
 box-sizing: border-box;
 padding: 16px 18px;
 min-width: 335px;
@@ -119,12 +119,12 @@ line-height: 1.3;
 
 }
 
-.comment {
+.leave .comment {
 min-height: 94px;
 }
 
 @media (min-width: 768px) {
-.form-input {
+.leave .form-input {
     min-width: 500px;
     line-height: 1.5; 
     margin-bottom: 32px;
@@ -136,13 +136,13 @@ min-height: 94px;
 
 
 @media (min-width: 768px) {
-.teacher-selection {
+.leave .teacher-selection {
     margin-top: 32px;
    
 }
 }
 
-.teacher-selection {
+.leave .teacher-selection {
 display: flex;
 flex-direction: column;
 border: none;
@@ -152,7 +152,7 @@ margin-top: 20px;
 margin-bottom: 40px; 
 }
 
-.teacher-selection-title {
+.leave .teacher-selection-title {
 margin: 0;
 padding: 0;
 font-size: 18px;
@@ -165,7 +165,7 @@ margin-bottom: 14px;
 }
 
 @media (min-width: 768px) {
-.teacher-selection-title {
+.leave .teacher-selection-title {
     font-size: 18px;
 }
 .radio-group {
@@ -176,11 +176,16 @@ margin-bottom: 14px;
 
 
 .radio-group label {
-display: block; 
+display: flex; 
+align-items: center;
 margin-bottom: 8px;
 position: relative;
-padding-left: 30px; 
 cursor: pointer; 
+margin-right: 8px;
+}
+
+.leave .radio-input {
+    margin-right: 8px; 
 }
 
 /*.radio-group {
@@ -223,104 +228,92 @@ border-radius: 50%;
 background-color: white;
 }*/
 
-.btn-primary {
+.leave .btn-primary {
 max-width: 335px;
 margin-bottom: 16px;
 }
 
-
-.card-image {
-width: 100%;
-border-radius: 30px;
-}
-
-.card {
-    top: 289px;
-    position: absolute; 
-    bottom: 0;
-    left: 0;
-    right: 0;
+.leave .card-container {
     background-color: var(--color-green); 
-    border-radius: 0 0 30px 30px; 
-    padding: 20px 20px 40px; 
-    gap: 8px;
-    
-}
-
-.card-title {
-color: var(--color-white);
-font-size: 40px;
-font-weight: 700;
-line-height: 1.2;
-letter-spacing: -0.02em;
-text-align: center;
-
-}
-
-.card-description {
-color: var(--color-white);
-font-size: 16px;
-font-weight: 400;
-line-height: 1.5;
-text-align: center;
-
-}
-***
-.card-form-container {
+    height: 36.125rem;
+    border-radius: 1.875rem;
+    overflow: hidden;
+    width: min(100%, 30.75rem);
+    text-align: center; 
+    gap: 0.5rem;
+    padding: 2.5rem 1.25rem;
+    position: relative;
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.card-container {
-
-position: relative; 
-width: 492px;
-padding: 0px 0px 40px 0px;
-gap: 0px;
-border-radius: 0 0 10px 10px;
-min-height: 578px;
-display: none;
-
+.leave .card-image {
+    clip-path: ellipse(60% 55% at 50% 34%);
+    width: 110%;
+    aspect-ratio: 1;
+    position: absolute;
+    object-fit: contain;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -15%);
 }
 
-
-.card-image {
-    width: 100%; 
-    border-radius: 30px; 
-}
-
-.card-appl {
-    position: absolute; 
-    bottom: 0; 
-    left: 0;
-    right: 0;
-    background-color: var(--color-green); 
-    padding: 20px; 
-    gap: 8px;
-    clip-path: polygon(39% 33%, 61% 33%, 75% 26%, 89% 12%, 100% 0, 100% 100%, 0 100%, 0 0, 10% 12%, 24% 26%);
-    
-}
-
-.card-title {
+.leave .card-title {
     color: var(--color-white);
-    font-size: 40px; 
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    text-align: center;
-    margin-top: 120px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
-.card-description {
-    color: var(--color-white);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: center;
+.leave .card-description {
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.leave .card-container {
+    display: none; 
 }
 
 @media (min-width: 1280px) {
-    .card-container {
-        display: block; 
+    .leave .card-container {
+        display: flex;
+    }
+
+    .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    margin: 20px auto;
+    gap: 32px; 
+    }
+
+    .leave .teacher-selection {
+        margin: 0;
+    }
+
+    .leave .application-form {
+        gap: 0;
+    }
+
+    .leave .form-input .comment {
+        margin-bottom: 0;
+    }
+
+    .leave .btn-primary {
+        
+        max-width: 500px;
+    }
+    .leave .top {
+        margin-bottom: 64px;
+      }
+
+    .leave .description {
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
     }
 }
