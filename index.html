@@ -16,8 +16,9 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
-		<script type="module" crossorigin src="/goit-team-3/assets/main-DQGWOHET.js"></script>
-		<link rel="stylesheet" crossorigin href="/goit-team-3/assets/main-DNeYl8Fl.css">
+		<link rel="manifest" href="manifest.json" />
+		<script type="module" crossorigin src="/goit-team-3/assets/main-C83Kwsck.js"></script>
+		<link rel="stylesheet" crossorigin href="/goit-team-3/assets/main-BmzNbrrY.css">
 	</head>
 	<body>
 		<header class="header" data-header>
@@ -28,7 +29,7 @@
 					.
 				</a>
 				<div class="menu" data-menu>
-					<button class="icon-button close-button" aria-label="close-button" data-menu-close>
+					<button class="icon-button close-button" data-menu-close>
 						<svg width="2rem" height="2rem">
 							<use href="/goit-team-3/images/icons.svg#icon-close"></use>
 						</svg>
@@ -54,21 +55,21 @@
 					</nav>
 					<ul class="social-list">
 						<li>
-							<a class="link contrast" target="_blank" href="https://www.facebook.com/goITclub/" aria-label="soc icon">
+							<a class="link contrast" target="_blank" href="https://www.facebook.com/goITclub/">
 								<svg class="icon" width="1.75rem" height="1.75rem">
 									<use href="/goit-team-3/images/icons.svg#icon-facebook"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a class="link contrast" target="_blank" href="https://www.instagram.com/goitclub/" aria-label="soc icon">
+							<a class="link contrast" target="_blank" href="https://www.instagram.com/goitclub/">
 								<svg class="icon" width="1.75rem" height="1.75rem">
 									<use href="/goit-team-3/images/icons.svg#icon-instagram"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a class="link contrast" target="_blank" href="https://www.youtube.com/c/GoIT" aria-label="soc icon">
+							<a class="link contrast" target="_blank" href="https://www.youtube.com/c/GoIT">
 								<svg class="icon" width="1.75rem" height="1.75rem">
 									<use href="/goit-team-3/images/icons.svg#icon-youtube"></use>
 								</svg>
@@ -100,7 +101,7 @@
 					</li>
 				</ul>
 		
-				<button class="icon-button open-button" aria-label="open-button" data-menu-open>
+				<button class="icon-button open-button" data-menu-open>
 					<svg width="2rem" height="2rem">
 						<use href="/goit-team-3/images/icons.svg#icon-hamburger"></use>
 					</svg>
@@ -112,7 +113,7 @@
 			<div class="container">
 				<h1 class="title">Discover the joy of learning <span class="accent">English</span> with us!</h1>
 				<a href="#leave-an-app" class="btn btn-primary">Leave an application</a>
-				<a href="#footer" class="icon-button scroll-button" aria-label="anchor icon">
+				<a href="#footer" class="icon-button scroll-button">
 					<svg width="1.5rem" height="1.5rem">
 						<use href="/goit-team-3/images/icons.svg#icon-chevron-down"></use>
 					</svg>
@@ -123,7 +124,7 @@
 		<section class="about" id="about">
 			<div class="container">
 				<div class="top">
-					<h2 class="title">
+					<h2>
 						About <span class="title-accent">Us</span>
 					</h2>
 					<p>We are dedicated to providing engaging and effective English language courses in a supportive and stimulating learning environment</p>
@@ -150,10 +151,10 @@
 					<div class="big-card">
 						<picture>
 							<source
-								srcset="./images/memoji.webp 1x, ./images/memoji@2x.webp 2x"
+								srcset="./images/memoji.png 1x, ./images/memoji@2x.png 2x"
 								type="image/png"
 							/>
-							<img src="./images/memoji.webp" alt="memoji" />
+							<img src="./images/memoji.png" alt="memoji" />
 						</picture>
 					</div>
 				</div>
@@ -178,7 +179,7 @@
 		          collaborative language exercises and group activities, boosting their
 		          conversational skills and confidence in using English.
 		        </p>
-		        <button aria-label="price 1" class="btn btn-primary" type="button">
+		        <button class="btn btn-primary" type="button">
 		          Leave an application
 		        </button>
 		      </li>
@@ -190,7 +191,7 @@
 		          all key areas of English language - reading, writing, listening, and
 		          speaking. It is a set of basic knowledge and skills.
 		        </p>
-		        <button aria-label="price 2" class="btn btn-primary" type="button">
+		        <button class="btn btn-primary" type="button">
 		          Leave an application
 		        </button>
 		      </li>
@@ -202,7 +203,7 @@
 		          instruction that focuses on a learner's specific language goals and
 		          challenges, offering personal feedback.
 		        </p>
-		        <button aria-label="price 3" class="btn btn-primary" type="button">
+		        <button class="btn btn-primary" type="button">
 		          Leave an application
 		        </button>
 		      </li>
@@ -260,8 +261,8 @@
 						</a>
 					</div>
 					<img class="master__pic" 
-					srcset="./images/books@2x.webp 2x"
-					src="./images/books.webp"
+					srcset="./images/books@2x.png 2x"
+					src="./images/books.png"
 					alt="pile of books" />
 				</div>
 			</div>
@@ -316,77 +317,6 @@
 					</p>
 				</li>
 			</ul>
-		</section>		
-		<section class="leave" id="leave-an-app">
-		  <div class="container">
-		    <div class="top">
-		      <h2 class="title">
-		        Leave an <span class="title-accent">application</span>
-		      </h2>
-		      <p class="description">Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.</p>
-		    </div>
-		
-		    <div class="main-container">
-		      
-		      <div class="card-container">
-		        <div class="image-wrap">
-		          <img src="/goit-team-3/assets/leave_application-DVVJP8jL.webp" alt="The small girl is looking for something interesting in english grammar" class="card-image">
-		        </div>
-		        <div class="card-appl">
-		          <h2 class="card-title">1000</h2>
-		          <p class="card-description">of our online English language lessons! This journey has been full of discovery, growth and unforgettable moments, and we are happy to share this joyful event with you.</p>
-		        </div>
-		      </div>
-		
-		      <div class="form-container">
-		        <div class="appl-form">
-		          <form class="application-form" action="#" method="post">
-		            <div class="form-group">
-		              <label for="name" class="sr-only">Name</label>
-		              <input type="text" id="name" name="name" class="form-input" required placeholder="Name" pattern="[A-Za-zs]+" title="Only letters and spaces are allowed">
-		            </div>
-		            <div class="form-group">
-		              <label for="email" class="sr-only">Email</label>
-		              <input type="email" id="email" name="email" class="form-input" required placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" title="Invalid email format">
-		            </div>
-		            <div class="form-group">
-		              <label for="phone" class="sr-only">Phone</label>
-		              <input type="tel" id="phone" name="phone" class="form-input" required placeholder="Phone" pattern="+?d{10,15}" title="Enter phone number in the format +XXXXXXXXXX (10-15 digits)">
-		            </div>
-		            <div class="form-group">
-		              <label for="comment" class="sr-only">Comment</label>
-		              <textarea id="comment" name="comment" class="form-input comment" required placeholder="Comment" minlength="10" title="Comment must be at least 10 characters long"></textarea>
-		            </div>
-		          </form>
-		        </div>
-		    
-		        <fieldset class="teacher-selection">
-		          <legend class="teacher-selection-title">Choose a teacher</legend>
-		          <div class="radio-group">
-		            <label>
-		              <input type="radio" name="teacher" value="maria" required class="radio-input"> Maria
-		            </label>
-		            <label>
-		              <input type="radio" name="teacher" value="artem" class="radio-input"> Artem
-		            </label>
-		            <label>
-		              <input type="radio" name="teacher" value="ilona" class="radio-input"> Ilona
-		            </label>
-		            <label>
-		              <input type="radio" name="teacher" value="volodymyr" class="radio-input"> Volodymyr
-		            </label>
-		          </div>
-		        </fieldset>
-		    
-		        <div class="bottom-wrap">
-		          <button type="submit" aria-label="submit button" class="btn btn-primary">Send</button>
-		          <p class="privacy-policy">By clicking on the “Send” button, you agree to our <a href="#" class="privacy-link">Privacy Policy</a>, and allow Promodo to use this information for marketing purposes.</p>
-		        </div>
-		      </div>
-		    
-		    </div>
-		  </div>
-		
 		</section>
 		<section class="students" id="students">
 		  <div class="container">
@@ -475,6 +405,65 @@
 		  </div>
 		</section>
 
+		<section class="leave" id="leave-an-app">
+		    <div class="container">
+		      <div class="top">
+		          <h2 class="header">
+		              Leave an <span class="title-accent">application</span>
+		          </h2>
+		          <p class="description">Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.</p>
+		      </div>
+		      <div class="grid-container">
+		        <div class="card-container">
+		            <img src="/goit-team-3/assets/leave_application-BsS7NRvk.jpg" alt="The small girl is looking for something interesting in english grammar" class="card-image">
+		            <h2 class="card-title">1000</h2>
+		            <p class="card-description">of our online English language lessons! This journey has been full of discovery, growth and unforgettable moments, and we are happy to share this joyful event with you.</p>
+		        </div>
+		    
+		        <div class="appl-form">
+		            <form class="application-form" action="#" method="post">
+		                <div class="form-group">
+		                    <label for="name" class="sr-only">Name</label>
+		                    <input type="text" id="name" name="name" class="form-input" required placeholder="Name" pattern="[A-Za-zs]+" title="Only letters and spaces are allowed">
+		                </div>
+		                <div class="form-group">
+		                    <label for="email" class="sr-only">Email</label>
+		                    <input type="email" id="email" name="email" class="form-input" required placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" title="Invalid email format">
+		                </div>
+		                <div class="form-group">
+		                    <label for="phone" class="sr-only">Phone</label>
+		                    <input type="tel" id="phone" name="phone" class="form-input" required placeholder="Phone" pattern="+?d{10,15}" title="Enter phone number in the format +XXXXXXXXXX (10-15 digits)">
+		                </div>
+		                <div class="form-group">
+		                    <label for="comment" class="sr-only">Comment</label>
+		                    <textarea id="comment" name="comment" class="form-input comment" required placeholder="Comment" minlength="10" title="Comment must be at least 10 characters long"></textarea>
+		                </div>
+		    
+		                <fieldset class="teacher-selection">
+		                    <legend class="teacher-selection-title">Choose a teacher</legend>
+		                    <div class="radio-group">
+		                        <label>
+		                            <input type="radio" name="teacher" value="maria" required class="radio-input"> Maria
+		                        </label>
+		                        <label>
+		                            <input type="radio" name="teacher" value="artem" class="radio-input"> Artem
+		                        </label>
+		                        <label>
+		                            <input type="radio" name="teacher" value="ilona" class="radio-input"> Ilona
+		                        </label>
+		                        <label>
+		                            <input type="radio" name="teacher" value="volodymyr" class="radio-input"> Volodymyr
+		                        </label>
+		                    </div>
+		                </fieldset>
+		    
+		                <button type="submit" class="btn btn-primary">Send</button>
+		                <p class="privacy-policy">By clicking on the “Send” button, you agree to our <a href="#" class="privacy-link">Privacy Policy</a>, and allow Promodo to use this information for marketing purposes.</p>
+		            </form> 
+		        </div>
+		    </div>
+		    </div> 
+		</section> 
 		<footer class="footer" id="footer">
 		    <div class="container">
 		        <div class="content-container">
@@ -490,9 +479,9 @@
 		                    <p class="contact-info-label">Phone number:</p>
 		                    <p class="phone-number">+380 (68) 443-94-26</p>
 		                </div>
-		                <div class="address">
+		                <div class="addres">
 		                    <p class="contact-info-label">Address:</p>
-		                    <a class="address-info" href="https://www.google.com/maps?sca_esv=754168574209eb79&output=search&q=32a+M.+Bazhana+ave&source=lnms&fbs=AEQNm0AnYLk5XLnZDC_bq-_hs1898jFyMx7DxtkpKWCR_PGcSA5SuaWOPB3r3GqTm3VSlaz1Ve2Hp1FgU_9P2cdMzkWJb3VFaYivl2hunq2PuWjMTLkRPQTYOhNdyoTxqKXbM1X9iYGP2lOs-c3ShpqpOsdPhf0J8bmncQmjxEtmcvACcCHrjgiv2JDiVk6bd7ThoFFPfYMZ1srkmxwvBqhh9SReHWtCSg88sOgAJmY2GPyqIBc962E8Uke8R-jU3BsfVYZMswrK&entry=mc&ved=1t:200715&ictx=111" target="_blank">32a M. Bazhana ave</a>
+		                    <p class="address-info">32a M. Bazhana ave</p>
 		                </div>
 		            </div>
 		            <div class="navigation">
@@ -521,7 +510,6 @@
 		                            class="link"
 		                            target="_blank"
 		                            href="https://www.facebook.com/goITclub/"
-		                            aria-label="soc icon"
 		                        >
 		                            <svg
 		                                class="icon"
@@ -539,7 +527,6 @@
 		                            class="link"
 		                            target="_blank"
 		                            href="https://www.instagram.com/goitclub/"
-		                            aria-label="soc icon"
 		                        >
 		                            <svg
 		                                class="icon"
@@ -557,7 +544,6 @@
 		                            class="link"
 		                            target="_blank"
 		                            href="https://www.youtube.com/c/GoIT"
-		                            aria-label="soc icon"
 		                        >
 		                            <svg
 		                                class="icon"
