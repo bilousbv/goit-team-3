@@ -59,6 +59,7 @@
 }
 
 .students-item {
+  width: 100%;
   max-width: 335px;
   padding: 20px 20px;
   border-radius: 16px;
@@ -106,7 +107,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  width: 295px;
+  width: 100%;
   padding: 14px;
   border-radius: 8px;
   background-color: var(--color-green);

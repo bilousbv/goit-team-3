@@ -71,7 +71,7 @@ p {
 
 section {
   scroll-margin-top: 4rem;
-  padding: 4.5rem 0;
+  padding: 2.5rem 0;
 }
 
 .container {
@@ -197,6 +197,10 @@ section {
 
 
 @media (min-width: 768px) {
+  section {
+    padding: 4.5rem 0;
+  }
+
   .container {
     padding: 0 2rem;
   }
