@@ -91,7 +91,7 @@
 
 .leave .appl-form {
     width: 100%;
-    max-width: 500px;  
+    max-width: 500px;
 }
 
 .leave .form-group {
@@ -139,21 +139,62 @@
     margin-bottom: 14px;
 }
 
-.leave .radio-group label {
-    display: block;
-    margin-bottom: 8px;
-    position: relative;
-    cursor: pointer;
+.leave .radio-group {
     display: flex;
-    gap: 8px;
+    flex-direction: column;
+    gap: 10px;
 }
 
 @media (min-width: 768px) {
     .leave .radio-group {
-        display: flex;
-        gap: 16px;
+        flex-direction: row;
     }
 }
+
+.leave .radio-group label {
+    display: flex;
+    gap: 8px;
+    color: var(--color-black);
+}
+
+.leave input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--color-white);
+    margin: 0;
+    font: inherit;
+    color: rgba(18, 20, 23, 0.5);
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid rgba(18, 20, 23, 0.5);
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+  }
+  
+  .leave input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: var(--color-green);
+  }
+
+  .leave input[type="radio"]:checked {
+    border: 0.15em solid var(--color-green);
+  }
+
+  .leave input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
+  
+  .leave input[type="radio"]:focus {
+    outline-offset: max(2px, 0.15em);
+  }
 
 .leave .bottom-wrap {
     width: 100%;
